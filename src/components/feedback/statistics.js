@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Notification from "./Notification";
 import styles from "./Feedback.module.scss";
 const Statistics = ({ good, neutral, bad, total, percentage }) => {
@@ -18,3 +19,11 @@ const Statistics = ({ good, neutral, bad, total, percentage }) => {
 };
 
 export default Statistics;
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  percentage: PropTypes.number.isRequired,
+};

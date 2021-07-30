@@ -1,7 +1,10 @@
 {
   "name": "goit-react-hw-02-feedback",
-  "homepage": "https://Bondarenkoalla.github.io/goit-react-hw-01-components",
-  "url": "git+https://github.com/Bondarenkoalla/goit-react-hw-01-components.git",
+  "homepage": "https://Bondarenkoalla.github.io/goit-react-hw-02-feedback",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bondarenkoalla/goit-react-hw-02-feedback.git"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +26,7 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "predeploy": "npm run build",
-      "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,7 +50,8 @@
     "eslint": "^7.30.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.0.1",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "prop-types": "^15.7.2"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
